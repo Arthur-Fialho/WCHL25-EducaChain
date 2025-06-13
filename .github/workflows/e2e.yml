@@ -47,7 +47,8 @@ jobs:
 
       - name: Build all canisters
         run: |
-          dfx deps pull
+          dfx generate
+          dfx build
           dfx deploy
           dfx stop
 
