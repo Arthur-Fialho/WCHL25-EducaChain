@@ -6,7 +6,7 @@ applyTo: "**"
 
 ## Project Context
 
-- This is an Internet Computer Protocol (ICP) project using Rust for canister development with PocketIC and Vitest for testing.
+- This is an Internet Computer Protocol (ICP) project using Motoko for canister development with PocketIC and Vitest for testing.
 - The frontend is built with Vite, React, and TypeScript, styled with Tailwind CSS v4.
 
 ## Frontend Stack
@@ -17,9 +17,9 @@ applyTo: "**"
 
 ## Code Quality & Formatting
 
-- We use `rust-lang.rust-analyzer` for formatting and linting **Rust** code.
+- We use `dfinity-foundation.vscode-motoko` for formatting and linting **Motoko** code.
 - We use `prettier` for formatting and linting **TypeScript** code.
-- Run `npm run format` for formatting both typescript and rust code.
+- Run `npm run format` for formatting both typescript and motoko code.
 
 ## AI Assistance
 
@@ -28,16 +28,6 @@ applyTo: "**"
 - When finishing a significant change, please PAUSE and ask the human for review and permission to continue.
 
 ## Development Commands
-
-### Backend Changes
-
-```bash
-# Generate candid after interface changes
-npm run generate-candid
-
-# Check Rust code for errors
-cargo check
-```
 
 ### Frontend Changes
 

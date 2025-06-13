@@ -25,16 +25,14 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "tamasfe.even-better-toml",
-        "rust-lang.rust-analyzer",
+        "dfinity-foundation.vscode-motoko",
+        "motoko-lsp-client.motoko-lsp-client",
         "bradlc.vscode-tailwindcss"
       ],
       "settings": {
         "chat.promptFiles": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "[rust]": {
-          "editor.defaultFormatter": "rust-lang.rust-analyzer"
-        },
         "files.associations": {
           "*.css": "tailwindcss"
         },
@@ -46,7 +44,7 @@
             "file": "general.instructions.md"
           },
           {
-            "file": "rust.instructions.md"
+            "file": "motoko.instructions.md"
           },
           {
             "file": "typescript.instructions.md"
