@@ -35,18 +35,31 @@ jobs:
       - name: NPM install
         run: npm install
 
+      - name: Setup Motoko tools
+        run: |
+          sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+          moc --version
+          moc --help
+
       - name: mops install
-        run: npx mops install
+        run: |
+          npm install -g ic-mops
+          mops install
 
       - name: Setup dfx
         uses: dfinity/setup-dfx@main
+        with:
+          dfx-version: "0.25.0"
 
-      - name: Install dfx
+      - name: Start dfx
         run: |
+          dfx --version
           dfx start --background
+          sleep 5
 
       - name: Build all canisters
         run: |
+          dfx deps pull
           dfx generate
           dfx build
           dfx deploy
