@@ -9,7 +9,7 @@ npm install
 
 # Install mops dependencies
 echo "📦 Installing mops dependencies..."
-mops install
+npx mops install
 
 # Set up dfx identity for codespace
 echo "🔑 Setting up dfx identity..."

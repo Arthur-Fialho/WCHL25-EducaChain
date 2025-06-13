@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update dependencies to latest versions
+- Switched the template to Motoko for writing the backend canister
+- Rewrote the devcontainer setup
+- Rewrote the tests
+- Rewrote the npm scripts
+- Rewrote the e2e workflow
+- Fix mops installation in CI workflow by using npx
 
 ## [0.1.0] - 2025-04-24
 
