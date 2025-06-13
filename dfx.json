@@ -6,23 +6,19 @@
     },
     "backend": {
       "dependencies": ["llm"],
-      "candid": "src/backend/backend.did",
-      "package": "backend",
-      "type": "custom",
-      "shrink": true,
-      "gzip": true,
-      "wasm": "target/wasm32-unknown-unknown/release/backend.wasm",
-      "build": ["bash ./scripts/generate-candid.sh backend"],
-      "metadata": [
-        {
-          "name": "candid:service"
-        }
-      ]
+      "type": "motoko",
+      "main": "src/backend/main.mo"
     },
     "frontend": {
       "dependencies": ["backend"],
       "type": "assets",
       "source": ["src/frontend/dist/"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": "mops sources"
     }
   },
   "output_env_file": ".env",

@@ -6,7 +6,8 @@
   "description": "Frontend for IC Vibe application",
   "scripts": {
     "start": "vite",
-    "build": "dfx generate && tsc && vite build",
+    "prebuild": "dfx generate",
+    "build": "tsc && vite build",
     "test": "vitest run"
   },
   "dependencies": {

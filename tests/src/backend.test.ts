@@ -15,9 +15,10 @@ export const WASM_PATH = resolve(
   dirname(fileURLToPath(import.meta.url)),
   "..",
   "..",
-  "target",
-  "wasm32-unknown-unknown",
-  "release",
+  ".dfx",
+  "local",
+  "canisters",
+  "backend",
   "backend.wasm",
 );
 

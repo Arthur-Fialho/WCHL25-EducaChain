@@ -11,9 +11,7 @@
 
 # generated files
 **/declarations/
-
-# rust
-target/
+.mops/
 
 # frontend code
 node_modules/

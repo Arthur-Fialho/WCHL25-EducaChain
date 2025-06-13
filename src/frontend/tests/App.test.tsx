@@ -17,7 +17,7 @@ describe("App", () => {
     // After act completes, all state updates from useEffect should be processed
     expect(screen.getByText("Vibe Coding Template")).toBeInTheDocument();
     expect(
-      screen.getByText("React + Rust + Internet Computer"),
+      screen.getByText("React + Motoko + Internet Computer"),
     ).toBeInTheDocument();
   });
 });
