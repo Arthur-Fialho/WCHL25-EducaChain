@@ -1,7 +1,10 @@
 # 🧪🔥 Ultimate IC Vibe Coding Template
 
-This template was built for the **IC Vibe Coding Bootcamp (Rust Edition)** and it's meant to be used in Advance Challenge or in a future Hackathon.
-If you are interested, you are welcome to [join until end of May](https://lu.ma/kyvm8zyd?tk=2jZPsD).
+## 👋 Welcome to the Ultimate IC Vibe Coding Template!
+
+This production-ready template powers your Internet Computer development with a complete stack featuring Motoko backend, React frontend, and integrated LLM capabilities. Built for professional developers seeking a fast path from concept to deployment, with testing and CI/CD built-in.
+
+Start building high-performance dapps in minutes, not days.
 
 ## Welcome! 👋
 
@@ -9,9 +12,9 @@ This repository offers a high-quality, production-ready template to jumpstart yo
 
 It includes:
 
-- 🦀 **Rust-based Canister** backend
-- ⚛️ **React + Tailwind + Typescript** frontend
-- 🤖 **IC LLM Canister** integration for Agentic workflows
+- 💻 **Motoko-based Canister** backend
+- 🔥 **React + Tailwind + Typescript** frontend
+- 🧠 **IC LLM Canister** integration for Agentic workflows
 - 🧪 **Full Test Suite**: Vitest + PocketIC for backend and frontend
 - 🔁 **CI/CD** with GitHub Actions for automated tests and code quality
 - 🤖 **Copilot Integration** to auto-generate tests, code, and changelogs
@@ -37,7 +40,8 @@ Whether you're building full-stack dapps or agents, this template gives you a so
 
 ## 🎥 Recording
 
-There was an Advanced Challenge Lab session, that was recorded and had a lot of information and showcase of Vibe Coding using this template.
+There was an Advanced Challenge Lab session, that was recorded and had a lot of information and showcase of Vibe Coding using a similar template in Rust.
+Even in Rust the core logic and add-ons to this template are the same.
 
 You can see here the full recording: https://www.youtube.com/watch?v=ZuNUy13wmlI
 
@@ -59,6 +63,7 @@ A **devcontainer** is preconfigured for you to start coding instantly!
 
 ```bash
 npm install
+mops install
 ```
 
 ### 3. Running Ollama
@@ -133,10 +138,8 @@ ICP-Bootcamp-Vibe-Coding/
 ├── .github/prompts/                      # Copilot Prompts, like add feature and changes review
 ├── .github/workflows/                    # GitHub CI/CD pipelines
 ├── src/
-│   ├── backend/                          # Rust backend canister
-│   │   ├── src/
-│   │   │   └── lib.rs                    # Main Rust file
-│   │   └── Cargo.toml                    # Rust dependencies
+│   ├── backend/                          # Motoko backend canister
+│   │   └── main.mo                       # Main Motoko file
 │   ├── frontend/                         # React + Tailwind + TypeScript frontend
 │   │   ├── src/
 │   │   │   ├── App.tsx                   # Main App component
@@ -161,7 +164,7 @@ ICP-Bootcamp-Vibe-Coding/
 │   ├── dev-container-setup.sh            # Extra set up steps for codespace
 │   └── generate-candid.sh                # Useful one way script to build, generate candid and did files
 ├── dfx.json                              # ICP config
-├── Cargo.toml                            # Root Rust workspace config
+├── mops.toml                             # Root Motoko package config
 └── CHANGELOG.md
 ```
 
@@ -197,13 +200,13 @@ Instructions provide "context" that applies to specific files using regex patter
 **Current Instructions:**
 
 - **general:** `applyTo: **`
-- **rust:** `applyTo: */*.rs`
+- **motoko:** `applyTo: */*.mo`
 - **test:** `applyTo: tests/**`
 
 **Examples of Context You Can Define:**
 
-- This is an ICP project using Rust canisters.
-- For Rust, we follow Clippy and Rust FMT style guides and linting tools.
+- This is an ICP project using Motoko canisters.
+- For Motoko, we follow standard style guides and linting tools.
 - For tests, we use **Pocket IC** and maintain a specific test structure.
 
 ### 🛠️ **About Prompts**
@@ -276,7 +279,7 @@ The AI will analyze the current git diffs, then reference other files in the rep
 - [Agent Mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
 - [Copilot Reference](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 - [ICP Dev Docs](https://internetcomputer.org/docs)
-- [Rust CDK](https://internetcomputer.org/docs/current/developer-docs/backend/rust/)
+- [Motoko Docs](https://internetcomputer.org/docs/motoko/home)
 - [PicJS Doc](https://dfinity.github.io/pic-js/)
 - [Vitest Testing Framework](https://vitest.dev/)
 
@@ -300,4 +303,4 @@ We especially welcome candidates of limits you face, consider using the **Limit 
 
 ---
 
-**Now go build something fast, tested, and production-ready 🚀🦀**
+**Now go build something fast, tested, and production-ready 🚀**
