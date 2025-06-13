@@ -35,19 +35,22 @@ jobs:
       - name: NPM install
         run: npm install
 
-      - name: mops install
-        run: npx mops install
-
       - name: Setup dfx
         uses: dfinity/setup-dfx@main
+        with:
+          dfx-version: "0.25.0"
 
       - name: Install dfx
         run: |
           dfx start --background
 
+      - name: mops install
+        run: |
+          npm install -g mops
+          mops install
+
       - name: Build all canisters
         run: |
-          dfx build
           dfx deploy
           dfx stop
 

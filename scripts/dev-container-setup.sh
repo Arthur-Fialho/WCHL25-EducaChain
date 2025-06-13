@@ -7,10 +7,6 @@ echo "🚀 Setting up ICP Vibe Coding development environment..."
 echo "📦 Installing npm dependencies..."
 npm install
 
-# Install mops dependencies
-echo "📦 Installing mops dependencies..."
-npx mops install
-
 # Set up dfx identity for codespace
 echo "🔑 Setting up dfx identity..."
 dfxvm install 0.25.0
@@ -18,6 +14,11 @@ dfx identity new codespace_dev --storage-mode=plaintext || echo "Identity may al
 dfx identity use codespace_dev      
 dfx start --background             
 dfx stop
+
+# Install mops dependencies
+echo "📦 Installing mops dependencies..."
+npm install -g mops
+mops install
 
 # Install jq for JSON parsing in scripts
 echo "🔧 Installing utilities..."
