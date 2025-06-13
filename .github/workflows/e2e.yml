@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: mops install
-        run: npx mops install
+        run: npx ic-mops install
 
       - name: Setup dfx
         uses: dfinity/setup-dfx@main
