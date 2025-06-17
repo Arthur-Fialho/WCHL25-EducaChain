@@ -17,7 +17,7 @@ dfx stop
 
 # Install mops dependencies
 echo "📦 Installing mops dependencies..."
-npm install -g mops
+npm install -g ic-mops
 mops install
 
 # Install jq for JSON parsing in scripts
