@@ -1,17 +1,9 @@
-import { useState } from "react";
 import ReactIcon from "../assets/React-icon.webp";
 
-// Import components and views
-import { Loader, ErrorDisplay } from "./components";
-import { GreetingView, CounterView, LlmPromptView } from "./views";
+
+import { EducaChainView } from "./views";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | undefined>();
-
-  const handleError = (errorMessage: string) => {
-    setError(errorMessage);
-  };
 
   const logoStyle = {
     animation: "logo-spin 60s linear infinite",
@@ -51,19 +43,11 @@ function App() {
 
           {/* Content Sections */}
           <div className="space-y-6">
-            {/* Greeting Section */}
-            <GreetingView onError={handleError} setLoading={setLoading} />
-
-            {/* Counter Section */}
-            <CounterView onError={handleError} setLoading={setLoading} />
-
-            {/* LLM Prompt Section */}
-            <LlmPromptView onError={handleError} setLoading={setLoading} />
+            {/* EducaChain Section */}
+            <EducaChainView />
           </div>
 
           {/* Loading and Error States */}
-          {loading && !error && <Loader />}
-          {!!error && <ErrorDisplay message={error} />}
         </div>
       </div>
     </>

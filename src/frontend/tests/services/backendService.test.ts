@@ -5,10 +5,9 @@ import { backend } from "../../../declarations/backend";
 // Mock the backend canister
 vi.mock("../../../declarations/backend", () => ({
   backend: {
-    greet: vi.fn().mockResolvedValue("Hello, Test User!"),
-    get_count: vi.fn().mockResolvedValue(BigInt(42)),
-    increment: vi.fn().mockResolvedValue(BigInt(43)),
-    prompt: vi.fn().mockResolvedValue("This is a mock LLM response"),
+    getBtcAddress: vi.fn().mockResolvedValue("BTC_ADDRESS_MOCK"),
+    donate: vi.fn().mockResolvedValue("Donation received!"),
+    requestScholarship: vi.fn().mockResolvedValue("Scholarship requested!"),
   },
 }));
 
@@ -18,47 +17,27 @@ describe("backendService", () => {
     vi.clearAllMocks();
   });
 
-  describe("greet", () => {
-    it("should call backend.greet with the provided name", async () => {
-      // Execute
-      const result = await backendService.greet("Test User");
-
-      // Assert
-      expect(backend.greet).toHaveBeenCalledWith("Test User");
-      expect(result).toBe("Hello, Test User!");
+  describe("getBtcAddress", () => {
+    it("should call backend.getBtcAddress and return the address", async () => {
+      const result = await backendService.getBtcAddress();
+      expect(backend.getBtcAddress).toHaveBeenCalled();
+      expect(result).toBe("BTC_ADDRESS_MOCK");
     });
   });
 
-  describe("getCount", () => {
-    it("should call backend.get_count", async () => {
-      // Execute
-      const result = await backendService.getCount();
-
-      // Assert
-      expect(backend.get_count).toHaveBeenCalled();
-      expect(result).toBe(BigInt(42));
+  describe("donate", () => {
+    it("should call backend.donate and return success message", async () => {
+      const result = await backendService.donate();
+      expect(backend.donate).toHaveBeenCalled();
+      expect(result).toBe("Donation received!");
     });
   });
 
-  describe("incrementCounter", () => {
-    it("should call backend.increment", async () => {
-      // Execute
-      const result = await backendService.incrementCounter();
-
-      // Assert
-      expect(backend.increment).toHaveBeenCalled();
-      expect(result).toBe(BigInt(43));
-    });
-  });
-
-  describe("sendLlmPrompt", () => {
-    it("should call backend.prompt with the provided prompt", async () => {
-      // Execute
-      const result = await backendService.sendLlmPrompt("Test prompt");
-
-      // Assert
-      expect(backend.prompt).toHaveBeenCalledWith("Test prompt");
-      expect(result).toBe("This is a mock LLM response");
+  describe("requestScholarship", () => {
+    it("should call backend.requestScholarship and return success message", async () => {
+      const result = await backendService.requestScholarship();
+      expect(backend.requestScholarship).toHaveBeenCalled();
+      expect(result).toBe("Scholarship requested!");
     });
   });
 });

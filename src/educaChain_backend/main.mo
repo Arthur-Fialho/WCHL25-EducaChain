@@ -1,3 +1,4 @@
+
 actor EducaChain {
     // Function to get the canister's BTC address (to be implemented)
     public query func getBtcAddress(): async Text {
