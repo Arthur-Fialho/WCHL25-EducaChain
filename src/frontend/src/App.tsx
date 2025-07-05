@@ -40,22 +40,24 @@ function App() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-900 text-white">
       <div className="mx-auto w-full max-w-4xl space-y-8 p-8 text-center">
-        <div className="flex justify-between items-center mb-8">
+        <div className="mb-8 flex items-center justify-between">
           <h1 className="text-4xl font-bold text-blue-400">ScholarFlow</h1>
           {principalId ? (
             <div className="flex items-center space-x-4">
-              <p className="text-lg font-semibold">Connected: {principalId.substring(0, 8)}...</p>
-              <button 
+              <p className="text-lg font-semibold">
+                Connected: {principalId.substring(0, 8)}...
+              </p>
+              <button
                 onClick={disconnectWallet}
-                className="px-4 py-2 bg-red-600 hover:bg-red-700 rounded-lg text-lg font-semibold transition-colors shadow-lg"
+                className="rounded-lg bg-red-600 px-4 py-2 text-lg font-semibold shadow-lg transition-colors hover:bg-red-700"
               >
                 Disconnect
               </button>
             </div>
           ) : (
-            <button 
+            <button
               onClick={connectWallet}
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold transition-colors shadow-lg"
+              className="rounded-lg bg-blue-600 px-4 py-2 text-lg font-semibold shadow-lg transition-colors hover:bg-blue-700"
             >
               Connect Plug Wallet
             </button>
