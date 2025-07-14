@@ -1,0 +1,14 @@
+type Result = variant { Ok : text; Err : text };
+type Student = record {
+  "principal" : principal;
+  current_stage : nat64;
+  completed_stages : vec nat64;
+  btc_address : text;
+};
+service : {
+  complete_stage_and_request_funds : () -> (Result);
+  donate : () -> (text) query;
+  get_btc_address : () -> (text) query;
+  get_student_progress : () -> (opt Student) query;
+  register_student : (text) -> ();
+}

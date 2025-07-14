@@ -1,4 +1,5 @@
 import { ScholarFlowView } from "./views";
+import RegisterStudent from "./components/RegisterStudent";
 import { useState } from "react";
 
 function App() {
@@ -68,6 +69,15 @@ function App() {
         <div className="space-y-6">
           {/* ScholarFlow Section */}
           <ScholarFlowView />
+
+          {/* Student Journey Section */}
+          {principalId && (
+            <div className="mt-8">
+              <div className="mt-4">
+                <RegisterStudent />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

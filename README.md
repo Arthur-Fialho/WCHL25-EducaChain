@@ -17,6 +17,7 @@ Our mission is to break down financial barriers to learning, enabling individual
 ### 2. Student Module
 
 - **Simplified Registration:** Students can create a basic profile (no sensitive personal information in the MVP, just an ICP and BTC wallet ID).
+- **Connect Bitcoin Wallet:** Functionality for students to connect their Bitcoin wallet to the DApp.
 - **Scholarship Request:** A button to request a "micro-scholarship" (a small fixed amount, e.g., 0.00001 BTC).
 - **BTC Receipt:** The functionality for the smart contract to release the Bitcoin to the student's wallet (after a manual or simulated "approval" in the MVP).
 
@@ -36,7 +37,7 @@ Our mission is to break down financial barriers to learning, enabling individual
 ## Technologies Used
 
 - **Internet Computer Protocol (ICP) using dfx from dfinity:** To host the canisters (smart contracts) and the frontend.
-- **Motoko:** Language for developing the canisters.
+- **Motoko & Rust:** Languages for developing the canisters.
 - **React & TypeScript:** For the web application's frontend.
 - **Plug Wallet:** For connecting to the ICP network.
 - **ICP's Native Bitcoin Integration:** To handle BTC transactions (full implementation on testnet/mainnet due to local replica limitations).
@@ -54,7 +55,7 @@ Follow these steps to set up and run ScholarFlow locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/pt-icp-hub/IC-Vibe-Coding-Template-Motoko.git scholarFlowDapp
+git clone https://github.com/Arthur-Fialho/WCHL25-ScholarFlow scholarFlowDapp
 cd scholarFlowDapp
 ```
 
@@ -65,10 +66,12 @@ npm install
 npm install --prefix src/frontend
 ```
 
-### 3. Start the DFINITY Local Replica
+### 3. Start the DFINITY Local Replica with Bitcoin Integration
+
+To interact with the Bitcoin network locally, you need to start the `dfx` replica with Bitcoin integration enabled:
 
 ```bash
-dfx start --clean --background
+dfx start --clean --background --enable-bitcoin
 ```
 
 ### 4. Deploy the Canisters
@@ -80,6 +83,21 @@ dfx deploy
 ### 5. Access the Frontend
 
 After successful deployment, `dfx` will provide a URL for the frontend canister. Open this URL in your browser (e.g., `http://bd3sg-teaaa-aaaaa-qaaba-cai.localhost:4943/`).
+
+## How to Use the DApp
+
+### For Students: Connecting Bitcoin Wallet and Requesting Scholarship
+
+1.  **Access the DApp:** Open the frontend URL provided by `dfx deploy` in your browser.
+2.  **Navigate to Student Section:** Click on the "Students" section or navigate to the relevant page.
+3.  **Connect Bitcoin Wallet:** Look for a button or section to "Connect Bitcoin Wallet". Click it and follow the prompts to connect your Bitcoin wallet. This will typically involve confirming the connection in your wallet extension.
+4.  **Request Scholarship:** Once your Bitcoin wallet is connected, you should see an option to "Request Micro-Scholarship" or a similar button. Click it to submit your scholarship request. For the MVP, this will trigger a simulated approval process.
+
+### For Donors: Viewing Platform Goals and Donation Information
+
+1.  **Access the DApp:** Open the frontend URL provided by `dfx deploy` in your browser.
+2.  **Navigate to Donor Section:** Click on the "Donors" section or navigate to the relevant page.
+3.  **View Donation Information:** On this page, you will see the platform's goals, a placeholder Bitcoin donation address (for local development), and simulated donation confirmations.
 
 ## Project Structure
 

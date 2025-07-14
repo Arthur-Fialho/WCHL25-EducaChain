@@ -5,7 +5,7 @@ import { backend } from "../../../declarations/backend";
  */
 export const backendService = {
   async getBtcAddress(): Promise<string> {
-    return await backend.getBtcAddress();
+    return await backend.get_btc_address();
   },
 
   async donate(): Promise<string> {
@@ -13,6 +13,11 @@ export const backendService = {
   },
 
   async requestScholarship(): Promise<string> {
-    return await backend.requestScholarship();
+    const result = await backend.complete_stage_and_request_funds();
+    if ('Ok' in result) {
+      return result.Ok;
+    } else {
+      throw new Error(result.Err);
+    }
   },
 };
