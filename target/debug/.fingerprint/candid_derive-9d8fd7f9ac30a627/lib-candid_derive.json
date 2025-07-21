@@ -1,1 +1,25 @@
-{"rustc":15597765236515928571,"features":"[]","declared_features":"[]","target":16264136799188349570,"profile":2225463790103693989,"path":7337446122211797294,"deps":[[3060637413840920116,"proc_macro2",false,9239881495287837182],[4974441333307933176,"syn",false,7610260871316084476],[17917672826516349275,"lazy_static",false,17541592476718484675],[17990358020177143287,"quote",false,11506065586161309427]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/candid_derive-9d8fd7f9ac30a627/dep-lib-candid_derive","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}
+{
+  "rustc": 15597765236515928571,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 16264136799188349570,
+  "profile": 2225463790103693989,
+  "path": 7337446122211797294,
+  "deps": [
+    [3060637413840920116, "proc_macro2", false, 9239881495287837182],
+    [4974441333307933176, "syn", false, 7610260871316084476],
+    [17917672826516349275, "lazy_static", false, 17541592476718484675],
+    [17990358020177143287, "quote", false, 11506065586161309427]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/candid_derive-9d8fd7f9ac30a627/dep-lib-candid_derive",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 0
+}

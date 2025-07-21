@@ -1,1 +1,24 @@
-{"rustc":15597765236515928571,"features":"[]","declared_features":"[\"termcolor\"]","target":15181268938956577436,"profile":2304137849415758851,"path":16778628892197716347,"deps":[[1322514204948454048,"unicode_width",false,12307219059510465036],[10192538278433647957,"typed_arena",false,2128225420968236161],[11279921689796057170,"arrayvec",false,14142953029378630211]],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/pretty-24ada34d839fc07f/dep-lib-pretty","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":14682669768258224367}
+{
+  "rustc": 15597765236515928571,
+  "features": "[]",
+  "declared_features": "[\"termcolor\"]",
+  "target": 15181268938956577436,
+  "profile": 2304137849415758851,
+  "path": 16778628892197716347,
+  "deps": [
+    [1322514204948454048, "unicode_width", false, 12307219059510465036],
+    [10192538278433647957, "typed_arena", false, 2128225420968236161],
+    [11279921689796057170, "arrayvec", false, 14142953029378630211]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "wasm32-unknown-unknown/release/.fingerprint/pretty-24ada34d839fc07f/dep-lib-pretty",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 14682669768258224367
+}

@@ -14,7 +14,7 @@ export const backendService = {
 
   async requestScholarship(): Promise<string> {
     const result = await backend.complete_stage_and_request_funds();
-    if ('Ok' in result) {
+    if ("Ok" in result) {
       return result.Ok;
     } else {
       throw new Error(result.Err);

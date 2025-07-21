@@ -1,1 +1,20 @@
-{"rustc":11410426090777951712,"features":"[\"cjk\", \"default\"]","declared_features":"[\"cjk\", \"compiler_builtins\", \"core\", \"default\", \"no_std\", \"rustc-dep-of-std\", \"std\"]","target":16876147670056848225,"profile":2304137849415758851,"path":18237514517574420574,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/unicode-width-f0410a9c4e20925d/dep-lib-unicode_width","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":14682669768258224367}
+{
+  "rustc": 11410426090777951712,
+  "features": "[\"cjk\", \"default\"]",
+  "declared_features": "[\"cjk\", \"compiler_builtins\", \"core\", \"default\", \"no_std\", \"rustc-dep-of-std\", \"std\"]",
+  "target": 16876147670056848225,
+  "profile": 2304137849415758851,
+  "path": 18237514517574420574,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "wasm32-unknown-unknown/release/.fingerprint/unicode-width-f0410a9c4e20925d/dep-lib-unicode_width",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 14682669768258224367
+}

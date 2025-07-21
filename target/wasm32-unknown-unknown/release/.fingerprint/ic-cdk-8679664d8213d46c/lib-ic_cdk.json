@@ -1,1 +1,27 @@
-{"rustc":15597765236515928571,"features":"[]","declared_features":"[\"transform-closure\"]","target":531514929357670352,"profile":2304137849415758851,"path":6399526667834152185,"deps":[[6145524563046927322,"ic0",false,14490339446012833489],[9689903380558560274,"serde",false,14893909953272168709],[10387476471412473778,"ic_cdk_executor",false,10073751471004840145],[10889494155287625682,"serde_bytes",false,11161849899693756631],[12942612994421719500,"ic_cdk_macros",false,5834193749770206480],[14246249717475003499,"candid",false,8873043994871616036]],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/ic-cdk-8679664d8213d46c/dep-lib-ic_cdk","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":14682669768258224367}
+{
+  "rustc": 15597765236515928571,
+  "features": "[]",
+  "declared_features": "[\"transform-closure\"]",
+  "target": 531514929357670352,
+  "profile": 2304137849415758851,
+  "path": 6399526667834152185,
+  "deps": [
+    [6145524563046927322, "ic0", false, 14490339446012833489],
+    [9689903380558560274, "serde", false, 14893909953272168709],
+    [10387476471412473778, "ic_cdk_executor", false, 10073751471004840145],
+    [10889494155287625682, "serde_bytes", false, 11161849899693756631],
+    [12942612994421719500, "ic_cdk_macros", false, 5834193749770206480],
+    [14246249717475003499, "candid", false, 8873043994871616036]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "wasm32-unknown-unknown/release/.fingerprint/ic-cdk-8679664d8213d46c/dep-lib-ic_cdk",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 14682669768258224367
+}

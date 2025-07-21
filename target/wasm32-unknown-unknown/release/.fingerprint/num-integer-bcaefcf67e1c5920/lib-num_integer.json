@@ -1,1 +1,20 @@
-{"rustc":11410426090777951712,"features":"[\"i128\", \"std\"]","declared_features":"[\"default\", \"i128\", \"std\"]","target":7628309033881264685,"profile":2304137849415758851,"path":14807288551833345464,"deps":[[5157631553186200874,"num_traits",false,17789768618156093174]],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/num-integer-bcaefcf67e1c5920/dep-lib-num_integer","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":14682669768258224367}
+{
+  "rustc": 11410426090777951712,
+  "features": "[\"i128\", \"std\"]",
+  "declared_features": "[\"default\", \"i128\", \"std\"]",
+  "target": 7628309033881264685,
+  "profile": 2304137849415758851,
+  "path": 14807288551833345464,
+  "deps": [[5157631553186200874, "num_traits", false, 17789768618156093174]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "wasm32-unknown-unknown/release/.fingerprint/num-integer-bcaefcf67e1c5920/dep-lib-num_integer",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 14682669768258224367
+}

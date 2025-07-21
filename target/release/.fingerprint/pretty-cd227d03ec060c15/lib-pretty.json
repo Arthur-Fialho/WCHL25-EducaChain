@@ -1,1 +1,24 @@
-{"rustc":11410426090777951712,"features":"[]","declared_features":"[\"termcolor\"]","target":15181268938956577436,"profile":17257705230225558938,"path":5030834842031822602,"deps":[[1322514204948454048,"unicode_width",false,2393243443356895092],[10192538278433647957,"typed_arena",false,7954630118713257437],[11279921689796057170,"arrayvec",false,5704627773126278244]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/pretty-cd227d03ec060c15/dep-lib-pretty","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}
+{
+  "rustc": 11410426090777951712,
+  "features": "[]",
+  "declared_features": "[\"termcolor\"]",
+  "target": 15181268938956577436,
+  "profile": 17257705230225558938,
+  "path": 5030834842031822602,
+  "deps": [
+    [1322514204948454048, "unicode_width", false, 2393243443356895092],
+    [10192538278433647957, "typed_arena", false, 7954630118713257437],
+    [11279921689796057170, "arrayvec", false, 5704627773126278244]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/pretty-cd227d03ec060c15/dep-lib-pretty",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 0
+}

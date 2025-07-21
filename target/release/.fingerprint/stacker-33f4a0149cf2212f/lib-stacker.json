@@ -1,1 +1,25 @@
-{"rustc":11410426090777951712,"features":"[]","declared_features":"[]","target":10683596921765102387,"profile":17257705230225558938,"path":5992174638522051062,"deps":[[2828590642173593838,"cfg_if",false,12246179279080851807],[4684437522915235464,"libc",false,5639958898127514504],[8618134998088965173,"psm",false,7554435675714927844],[15142378263600615925,"build_script_build",false,15958269580800791939]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/stacker-33f4a0149cf2212f/dep-lib-stacker","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}
+{
+  "rustc": 11410426090777951712,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 10683596921765102387,
+  "profile": 17257705230225558938,
+  "path": 5992174638522051062,
+  "deps": [
+    [2828590642173593838, "cfg_if", false, 12246179279080851807],
+    [4684437522915235464, "libc", false, 5639958898127514504],
+    [8618134998088965173, "psm", false, 7554435675714927844],
+    [15142378263600615925, "build_script_build", false, 15958269580800791939]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/stacker-33f4a0149cf2212f/dep-lib-stacker",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 0
+}

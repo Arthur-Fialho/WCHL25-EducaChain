@@ -1,1 +1,24 @@
-{"rustc":15597765236515928571,"features":"[\"default\"]","declared_features":"[\"default\", \"deserialize_in_place\"]","target":15021099784577728963,"profile":2225463790103693989,"path":14624187933464328359,"deps":[[3060637413840920116,"proc_macro2",false,9239881495287837182],[4974441333307933176,"syn",false,7610260871316084476],[17990358020177143287,"quote",false,11506065586161309427]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/serde_derive-ba950e28107d2410/dep-lib-serde_derive","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}
+{
+  "rustc": 15597765236515928571,
+  "features": "[\"default\"]",
+  "declared_features": "[\"default\", \"deserialize_in_place\"]",
+  "target": 15021099784577728963,
+  "profile": 2225463790103693989,
+  "path": 14624187933464328359,
+  "deps": [
+    [3060637413840920116, "proc_macro2", false, 9239881495287837182],
+    [4974441333307933176, "syn", false, 7610260871316084476],
+    [17990358020177143287, "quote", false, 11506065586161309427]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/serde_derive-ba950e28107d2410/dep-lib-serde_derive",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 2069994364910194474,
+  "compile_kind": 0
+}
