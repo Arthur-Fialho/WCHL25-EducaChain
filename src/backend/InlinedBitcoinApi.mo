@@ -2,6 +2,12 @@ import ExperimentalCycles "mo:base/ExperimentalCycles";
 
 import InlinedTypes "InlinedTypes";
 
+public type Utxo = {
+    outpoint: OutPoint;
+    value : Satoshi;
+    height : Nat32;
+};
+
 module {
     type Cycles = InlinedTypes.Cycles;
     type Satoshi = InlinedTypes.Satoshi;
